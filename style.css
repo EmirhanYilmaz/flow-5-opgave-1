@@ -1,0 +1,129 @@
+.header-container{display: flex;width: 100%;justify-content: space-between;align-items: center;}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.logo {
+    background: #000;
+    height: 45px;
+    width: 45px;
+}
+
+.nav {
+    display: none;
+    gap: 10px;
+}
+
+
+@media screen and (min-width: 992px) {
+.nav {
+    display: flex;
+}
+}
+
+.mobile-nav svg {
+    fill: #000;
+    height: 30px;
+    width: 30px;
+}
+
+.nav-item {
+    height: 10px;
+    width: 50px;
+    background: #838383;
+}
+
+@media screen and (min-width: 992px) {
+.mobile-nav {
+    display: none;
+}
+}
+
+.hero-splash {
+    min-height: 50vh;
+    background: #969696;
+    flex: 1;
+}
+
+@media screen and (min-width: 992px) {
+.hero-splash {
+    order: 0;
+}
+}
+
+.offers {
+    display: flex;
+    height: 50vh;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+ 
+.offers {
+    flex-direction: row-reverse;
+    order: 2;
+}
+}
+
+.offers > div {
+    background: #000;
+}
+
+.offer-1 {
+    flex: 1;
+    height: 30%;
+}
+
+.offer-2 {
+    flex: 1;
+    height: 50%;
+}
+
+.offer-3 {
+    flex: 1;
+    height: 80%;
+}
+
+.process {
+    height: 50vh;
+    flex: 1;
+    background: #2a2a2a;
+}
+
+@media screen and (min-width: 992px) {
+.process {
+    order: 1;
+    flex: 1;
+}
+}
+
+footer {
+    height: 100px;
+    background: #000;
+    margin-top: 15px;
+}
+
+
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
